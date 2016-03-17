@@ -1,7 +1,10 @@
 == README
+ 
+Video game designed in Ruby logic; graphical output generated through the use of the Gosu 2D Gem Development Library.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the first game in the series that I'm working on in order to better grasp Gosu and build upon my knowledge of the Ruby programming language.
+
+I am following the guidelines set forth in the book, "Learn Game Programming with Ruby, Bring Your Ideas to Life with Gosu", written by Mark Sobkowicz, a published installment of The Pragmatic Programmers series. 
 
 Things you may want to cover:
 
