@@ -70,7 +70,7 @@ class WhackaRuby < Gosu::Window
         end
       end
     end
- end
+  end
 
   
 end
