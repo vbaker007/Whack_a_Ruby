@@ -8,5 +8,4 @@ I am following the guidelines set forth in the book, "Learn Game Programming wit
 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
