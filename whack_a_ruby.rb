@@ -13,13 +13,13 @@ class WhackaRuby < Gosu::Window
     @velocity_y = 5
     @visible = 0
     @hammer_image = Gosu::Image.new('hammer.png')
-    @hit = 0
-    
+    @hit = 0 
+    @font = Gosu::Font.new(30)
+    @score = 0
   end
 
   
   def update
-    
     @x += @velocity_x
     @y += @velocity_y
     @velocity_x *= -1 if @x + @width / 2 > 800 || @x - @width / 2 < 0
@@ -42,20 +42,19 @@ class WhackaRuby < Gosu::Window
     end
     draw_quad(0, 0, c, 800, 0, c, 800, 600, c, 0, 600, c)
     @hit = 0
+    @font.draw(@score.to_s, 700, 20, 2)
   end
 
   def button_down(id)
-    
       if (id == Gosu::MsLeft)
         if Gosu.distance(mouse_x, mouse_y, @x, @y) < 50 && @visible >= 0
           @hit = 1
-          
+          @score += 5
         else
           @hit = -1
-          
+          @score -= 1
         end
       end
-  
   end
 
   
